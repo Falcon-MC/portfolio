@@ -1,0 +1,153 @@
+body {
+    color: white;
+    background: #202731;
+    overflow-x: hidden;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(40px);
+    transform: translateX(-40%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+
+.spacer {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    aspect-ratio: 960/300;
+    background-image: url('./layer1.svg');
+    transform: scaleY(-1);
+}
+
+.steps {
+    aspect-ratio: 960/100;
+    background-image: url('./steps.svg');
+}
+
+.footer {
+    aspect-ratio: 960/100;
+    background-image: url('./footer.svg');
+    display: flex;
+    height: 40vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#me {
+    background: linear-gradient(90deg, #00b4d8 0%, #0083b0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+#title {
+    font-size: 10em;
+}
+
+#about {
+    background-image: url("./poly.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    font-size: 2vh;
+}
+
+#education {
+    padding-top: 17vh;
+    padding-bottom: 30vh;
+    display: flex;
+    justify-content: center;
+    align-self: auto;
+    height: 0;
+    font-size: 2vh;
+}
+
+#education h1 {
+    font-size: 3vh;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.fa {
+    color: white;
+}
+
+#socials {
+    font-size: 3vh;
+}
+
+#discordsocial {
+    font-size: 2vh;
+}
+
+#contacttext {
+    font-size: 4vh;
+}
+
+#socialstext {
+    font-size: 4vh;
+}
+
+#thisis {
+    font-size: 3vh;
+}
+
+#projects {
+    background-image: url("./blob.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects h1 {
+    font-size: 5vh;
+}
+
+#projects p {
+    font-size: 2vh;
+}
+
+@media (min-width: 760px) {
+    #projects {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 761px) {
+    #projects {
+        height: 55vh;
+    }
+}
