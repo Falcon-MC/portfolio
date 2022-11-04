@@ -79,6 +79,17 @@ section {
     font-size: 2vh;
 }
 
+
+@media (min-width: 760px) {
+    #about {
+        padding: 0 50px;
+    }
+    #education {
+        padding: 0 50px;
+    }
+}
+
+
 #education {
     padding-top: 17vh;
     padding-bottom: 30vh;
