@@ -8,6 +8,19 @@
     <link rel="stylesheet" href="https://static.pingendo.com/bootstrap/bootstrap-4.3.1.css">
     <link rel="stylesheet" href="style.css">
     <script defer src="app.js"></script>
+    
+    <script>
+        function getAge(dateString) {
+            var today = new Date();
+            var birthDate = new Date(dateString);
+            var age = today.getFullYear() - birthDate.getFullYear();
+            var m = today.getMonth() - birthDate.getMonth();
+            if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                age--;
+            }
+            return age;
+        }
+    </script>
 
 </head>
 <body>
@@ -24,7 +37,7 @@
     <div class="hidden">
         <h1 class="text-center">Hey, I'm Falcon.</h1>
         <p class="text-center">I'm a
-            <script>document.write(getAge("2007-01-27"))</script>
+            <script>document.write(getAge("2007-01-27"));</script>
             year old, Developer, Gamer, Student, And a wannabe artist. <br><br>
             I usually play games and code on my free time, and enjoy drawing quite bad pieces of art, <br>
             but as some snob said, "art is in the eye of beholder".<br><br>
